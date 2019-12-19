@@ -1,0 +1,32 @@
+{
+    "name": "expect",
+    "displayName": "Expect",
+    "description": "Expect Language Support",
+    "version": "0.0.1",
+    "publisher": "bdavs",
+    "engines": {
+        "vscode": "^1.39.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "expect",
+            "aliases": ["Expect", "expect"],
+            "extensions": [".exp"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "expect",
+            "scopeName": "source.exp",
+            "path": "./syntaxes/expect.tmLanguage.json"
+        }],
+        "snippets": [
+            {
+                "language": "expect",
+                "path": "./snippets/expect_snippets.json"
+            }
+        ]
+    }
+}
