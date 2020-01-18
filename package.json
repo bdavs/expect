@@ -1,33 +1,52 @@
 {
-    "name": "expect",
-    "displayName": "Expect",
-    "description": "Expect Language Support",
-    "version": "0.0.1",
-    "publisher": "bdavs",
-    "repository": "https://github.com/bdavs/expect",
-    "engines": {
-        "vscode": "^1.39.0"
+	"name": "expect",
+	"displayName": "Expect",
+	"description": "Expect Language Support",
+	"version": "0.1.0",
+	"publisher": "bdavs",
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/bdavs/expect"
     },
-    "categories": [
-        "Programming Languages"
-    ],
-    "contributes": {
-        "languages": [{
-            "id": "expect",
-            "aliases": ["Expect", "expect"],
-            "extensions": [".exp"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "expect",
-            "scopeName": "source.exp",
-            "path": "./syntaxes/expect.tmLanguage.json"
-        }],
-        "snippets": [
-            {
-                "language": "expect",
-                "path": "./snippets/expect_snippets.json"
-            }
-        ]
-    }
+	"engines": {
+		"vscode": "^1.39.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "expect",
+				"aliases": [
+					"Expect",
+					"expect"
+				],
+				"extensions": [
+                    ".exp",
+                    ".expect"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "expect",
+				"scopeName": "source.exp",
+				"path": "./syntaxes/expect.tmLanguage.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "expect",
+				"path": "./snippets/expect_snippets.json"
+			}
+		]
+    },
+    "license": "MIT",
+	"__metadata": {
+		"id": "c02af6e9-b7f3-4d81-b6ba-14583080ee28",
+		"publisherDisplayName": "bdavs",
+		"publisherId": "f3f2db87-8a89-44a8-90e6-70b679073c3a"
+	}
 }
