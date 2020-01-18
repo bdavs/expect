@@ -4,6 +4,7 @@
     "description": "Expect Language Support",
     "version": "0.0.1",
     "publisher": "bdavs",
+    "repository": "https://github.com/bdavs/expect",
     "engines": {
         "vscode": "^1.39.0"
     },
