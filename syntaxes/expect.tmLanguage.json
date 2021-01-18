@@ -51,7 +51,7 @@
 		"variable": {
 			"patterns": [{
 				"name": "variable.expect",
-				"match": "(\\$[\\w{}]+)"
+				"match": "(\\$[\\w{}\\-\\_]+)"
 			}]
 		},
 		"constant": {
